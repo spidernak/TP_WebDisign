@@ -1,0 +1,20 @@
+.box{
+    background-color: rgb(41, 233, 233);
+    border-radius: 4px;
+    margin: 1px;
+    height: 30px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1px 1px;
+}
+.grid{
+    background-color: rgb(187, 194, 194);
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    width: 458px;
+    column-gap: 52px;
+    margin: 100px;
+ 
+}

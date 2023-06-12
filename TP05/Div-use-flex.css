@@ -1,0 +1,19 @@
+.wrapper{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(187, 194, 194);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+}
+.flying-box{
+    background-color: brown;
+    height: 50px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 13px;
+}

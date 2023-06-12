@@ -1,0 +1,23 @@
+@media ( 0px <= width <= 499px){ 
+    .small{
+        background-color: red;
+        font-size: 20px;
+        height: 25px;
+        width: 60px;
+    }
+    .big{
+        display: none;
+    }
+}
+@media ( 500px <= width <= 1231px){ 
+    .big{
+        background-color: green;
+        font-size: 35px;
+        height: 50px;
+        width: 120px;
+    }
+    .small{
+        display: none;
+    }
+}
+ 

@@ -1,0 +1,46 @@
+.Scrollbar{
+    border: 2px solid black;
+    width: 200px;
+    padding: 5px;
+    margin: 100px;
+}
+.header{
+    background-color: palevioletred;
+    height: 50px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#header{
+    background-color: palevioletred;
+    height: 50px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;  
+}
+.vertical{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 200px;
+    margin-top: 5px;
+}
+.grid{
+    background-color: rgb(114, 224, 114);
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+.horizontal{
+    display: flex;
+    overflow: hidden;
+    overflow-x: scroll;
+    width: 200px;
+    height: 200px;
+    margin-top: 5px;
+}
