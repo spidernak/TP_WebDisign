@@ -9,7 +9,7 @@
         display: none;
     }
 }
-@media ( 500px <= width <= 1231px){ 
+@media ( 500px <= width <= 1300px){ 
     .big{
         background-color: green;
         font-size: 35px;
