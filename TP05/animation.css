@@ -1,0 +1,39 @@
+ .wrapper{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(110, 108, 108);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px;
+ }
+ @keyframes dropdown{
+    0%   { bottom:0px; top:-100px;}
+    25%  {bottom:10px; top:0px;}
+    50%  {bottom:0px; top:0px;}
+    75%  {bottom:0px; top:0px;}
+    100% { bottom:0px; top:0px;}
+ }
+ .drop1{
+    margin: 10px;
+    position: relative;
+    animation-name: dropdown;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+ }
+ .drop2{
+    margin: 10px;
+    position: relative;
+    animation-name: dropdown;
+    animation-duration: 4s;
+    animation-delay: 0.1s;
+    animation-fill-mode: forwards;
+ }
+ .drop3{
+    margin: 10px;
+    position: relative;
+    animation-name: dropdown;
+    animation-duration: 4s;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+ }

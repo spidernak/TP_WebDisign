@@ -1,0 +1,9 @@
+.wrapper{
+    background-color: yellow;
+    min-width: 300px;
+    max-width: 800px;
+    height: 516px;
+    position: relative;
+    translate: 100px 100px;
+}
+ 
