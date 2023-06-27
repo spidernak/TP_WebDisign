@@ -1,0 +1,67 @@
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    flex-direction: column;
+    
+}
+.page{
+    height: 800px; 
+    width: 900px;
+    background-color: white(226, 230, 230);
+    border: 5px solid black;
+    padding: 10px;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px;
+}
+ 
+.tab{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 880px;
+    margin: 10px ;
+    padding-top: 10px;
+    
+
+
+}
+
+.tab input[type="radio"]{
+    display: none;
+}
+
+.tab label{
+    padding: 20px;
+    background-color: rgb(228, 228, 228);
+    display: flex;
+    justify-content: space-around;
+    width: 250px;
+
+}
+
+.description{
+    width: 100%;
+    padding: 10px;
+    background: white;
+    order: 1;
+    display: none;
+}
+
+.h3{
+    font-size: 3em;
+}
+
+input[type='radio']:checked+label + .description{
+    display: block;
+}
+
+.tab input[type= "radio"]:checked+ label{
+    background: white;
+}
+ 
