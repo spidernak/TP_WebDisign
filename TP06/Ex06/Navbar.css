@@ -1,31 +1,23 @@
-
 .screen{
-    border: 5px solid black;
     width: 100%;
     height: 500px;
+    border: 7px solid black;
     font-family: Verdana;
 }
-.logo{
+.nav{
+    width: 100%;
+    background-color: brown;
+    height: 200px;
     display: flex;
+}
+.logo{
     color: white;
-    font-size: 33px;
+    width: 30%;
+    height: 200px;
+    display: flex;
     align-items: center;
-    width: 300px;
-    font-size:40px;
-    justify-content: center;  
+    justify-content: center;
 }
-
-.icon{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-    float:right;
-    align-items: center;
-    color: rgb(68, 145, 222);
-    width: 150px;padding-left:30px;
-}
-
- 
 *{
     padding: 0px;
     margin: 0px;
@@ -33,63 +25,63 @@
     list-style: none;
     box-sizing: border-box;
 }
- 
-nav{
-    background-color: brown;
-    height: 100px;
-    width: 100%;
-} 
-
- 
-nav ul{
-    float: right;
-    margin-right: 20px;
-}
-nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin:0 5px;
-}
-
-nav ul li a{
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 30%;
+    height: 200px;
+    
     color: white;
-    font-size: 17px;
-    border-radius: 10px;
-    padding: 5px 10px;
 }
-
-a.active,a:hover{
-    background: orange;
+.icon{
+    color: rgb(109, 171, 221);
+    display: flex;
+    align-items: center;
+    width: 180px;
+    margin-left: 50px;
+    justify-content: space-evenly;
+}
+a.acttive,a:hover{
+    background-color: goldenrod;
     transition: .5s;
+    border-radius: 7px;
+    height: 50px;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.checkbutton{
-    color:white;
-    font-size: 33px;
-    float:right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor:pointer;
+.checkbtn{
+    color: white;
+    float: right;
+    cursor: pointer;
     display: none;
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
 }
 #check{
     display: none;
 }
-@media(max-width: 700px){
-    label.logo{
+
+@media(700px <= width <=1400px  ){
+    .logo{
         font-size: 30px;
-        padding-left:50px;
     }
-    nav ul li a{
-        font-size: 15px;
+    .checkbtn{
+        display: none;
     }
+
 }
 
-@media(max-width: 650px){
-    .checkbutton{
-        display: block;
+@media(0px<= width <=699px){
+    .checkbtn{
+        display: flex;
     }
-    ul{
+    .menu{
         position: fixed;
         width: 80%;
         height: 400px;
@@ -98,19 +90,17 @@ a.active,a:hover{
         top: -100%;
         transition: all.5s;
     }
-    nav ul li{
-        display: block;
-        margin: 40px;
+ 
+    li{
+        display: block;        
+        margin: 40px;        
         line-height: 50px;
     }
-    nav ul li a{
-        font-size: 20px;
-    }
     a:hover,a.active{
-        background: purple;
-        color:grey;
+        background: pink;
+        color: black;
     }
-    #check:checked ~ul{
+    #check:checked ~menu{
         top:0;
     }
 }
