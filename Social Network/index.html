@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Network</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="w-[393px] h-[852px] bg-[#A6E1FA] hidden" id="fisrpage">
+          <div class=" w-full h-[200px]">
+               <img class="rounded-full w-28 absolute top-[80px] left-[130px]"src="./image/Logo.jpg" alt="" >
+          </div>
+           
+          <p class="text-center font-extralight text-xl"> Welcome to Socila Network</p>
+           <img class="w-full h-[262px ] pt-4" src="./image/pic1.jpg" alt="">
+          <div class=" w-full h-[200px] flex flex-col items-center pt-5 space-y-5 ">
+               <button type="submit" class="bg-[#0E6BA8] w-[229px] h-[39px] rounded-full text-white shadow-sm shadow-black ">Log in</button>
+               <button type="submit" class="bg-[#0E6BA8] w-[229px] h-[39px] rounded-full text-white shadow-sm shadow-black">Register</button>
+          </div>
+          
+     </div>
+
+     <!-- Login Page -->
+     <div class="w-[393px] h-[852px] bg-[#A6E1FA]  hidden"  id="logeinpage">
+          <div class=" w-full h-[200px]">
+               <img class="rounded-full w-28 absolute top-[80px] left-[130px]"src="./image/Logo.jpg" alt="" >
+          </div>
+           
+          <p class="text-center font-extralight text-xl"> Welcome to Socila Network</p>
+           <img class="w-full h-[262px ] pt-4" src="./image/pic1.jpg" alt="">
+          <div class="w-full   h-[340px] p-3">
+               <div class="w-full border-2 border-black h-[320px]  flex flex-col ">
+                    <div class="flex">
+                         <p class="w-[90px] h-[200px]   text-center pt-4">Log in</p>
+                         <div class="h-[200px]   pt-4 space-y-2 flex flex-col items-center">
+                              <input type="email" id="logine" placeholder="Email or Phone Nummbers" required class="h-[36px] w-[260px] bg-[#0E6BA8] border rounded-full  font-extralight px-3">
+                              <input type="password" id="loginpw" placeholder="Password" required class="h-[36px] w-[260px] bg-[#0E6BA8] border rounded-full  font-extralight px-3">
+                              <input type="password" id="email" placeholder="Re-input Password" required class="h-[36px] w-[260px] bg-[#0E6BA8] border rounded-full  font-extralight px-3">
+                              <buuton type="submit" class="bg-[#0E6BA8] flex items-center justify-center w-[100px] h-[39px] rounded-full text-white shadow-sm shadow-black ">Log in</buuton>
+                         </div>
+                    </div>
+                    <P class="pl-5 text-sm flex pt-8">If don't have an ccoount yet click
+                         <button type="submit" class="ml-5 bg-[#0E6BA8] flex items-center justify-center w-[85px] h-[26px] rounded-full text-white shadow-sm shadow-black  hover:font-light">Register</button>
+                    </P>
+
+                    
+                     
+
+               </div>
+          </div>
+     </div>
+
+     <!-- RegisterPage -->
+     <div class="w-[393px] h-[852px] bg-[#A6E1FA] hidden" id="Registerpage">
+          <div class=" w-full h-[200px]">
+               <i class="fa-solid fa-circle-arrow-left p-6"></i>
+               <img class="rounded-full w-28 absolute top-[80px] left-[130px]"src="./image/Logo.jpg" alt="" >
+          </div>
+           
+          <p class="text-center font-extralight text-xl"> Registration </p>
+          <div class="flex   justify-center pt-8" >
+               <i class="fa-brands fa-facebook fa-2xl"></i>
+               <i class="fa-brands fa-twitter fa-2xl"></i>
+          </div>
+          <div class="pt-10 flex flex-col   items-center space-y-3">
+             
+               <input type="text" placeholder="First Name" required id="fname" class="w-[286px] h-[36px] bg-[#0E6BA8] rounded-full px-4 font-extralight">
+               <input type="text" placeholder="First Name" required id="lname" class="w-[286px] h-[36px] bg-[#0E6BA8] rounded-full px-4 font-extralight">
+
+               <input type="text" placeholder="Date of Birth" required id="date" class="w-[286px] h-[36px] bg-[#0E6BA8] rounded-full px-4 font-extralight ">
+
+               <input type="email" placeholder="Email or Phone Nummbers" required id="registeremail" class="w-[286px] h-[36px] bg-[#0E6BA8] rounded-full px-4 font-extralight">
+               <input type="password" placeholder="Password" required id="registerpassword" class="w-[286px] h-[36px] bg-[#0E6BA8] rounded-full px-4 font-extralight">
+               <input type="password" placeholder="Confirm Password" required id="conpassword" class="w-[286px] h-[36px] bg-[#0E6BA8] rounded-full px-4 font-extralight">
+
+          </div>
+          <div class="flex justify-end mr-14 mt-6">
+               <button type="submit" class="ml-5 bg-[#0E6BA8] flex items-center justify-center w-[85px] h-[26px] rounded-full text-white shadow-sm shadow-black  hover:font-light">Confirm</button>
+
+          </div>
+ 
+     </div>
+ 
+     <!-- Homepage -->
+     <div class="w-[393px] h-[852px] bg-[#A6E1FA] mt-6 hidden" id="homepage">
+          <div class="flex justify-between   h-[80px] items-center">
+               <p class="text-[20px] ml-4  ">Social Network</p>
+               <i class="fa-brands fa-facebook-messenger  fa-xl mr-5"></i>
+          </div>
+          <input type="text" placeholder="search" class=" ml-2 w-[367px] h-[29px] px-3 rounded-full bg-[#97DBF8]"><i class="fa-solid fa-magnifying-glass"></i></input>
+          
+          <div class="flex h-[70px]   items-center justify-between pl-2 pt-3">
+               <div class="flex flex-col items-center">
+                    <img src="./image/user.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50px; stroke-width: 3px; border: 2px solid #00B3FF;"> 
+                    <a class="text-[10px] ">You</a>
+               </div>
+               <div class="flex flex-col items-center">
+                    <img src="./image/Rbpf.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50px; stroke-width: 3px; border: 2px solid #00B3FF;"> 
+                    <a class="text-[10px] ">Robert</a>
+               </div>
+               <div class="flex flex-col items-center">
+                    <img src="./image/Enopf.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50px; stroke-width: 3px; border: 2px solid #00B3FF;"> 
+                    <a class="text-[10px] ">Eno_Zin</a>
+               </div>
+               <div class="flex flex-col items-center">
+                    <img src="./image/emily.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50px; stroke-width: 3px; border: 2px solid #00B3FF;"> 
+                    <a class="text-[10px] ">Emily</a>
+               </div>
+               <div class="flex flex-col items-center">
+                    <img src="./image/zin II.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50px; stroke-width: 3px; border: 2px solid #00B3FF;"> 
+                    <a class="text-[10px] ">Zin II</a>
+               </div>
+               <div class="flex flex-col items-center">
+                    <img src="./image/kmav.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50px; stroke-width: 3px; border: 2px solid #00B3FF;"> 
+                    <a class="text-[10px] ">Kmav</a>
+               </div>
+               <div class="flex flex-col items-center">
+                    <img src="./image/zendaya.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50px; stroke-width: 3px; border: 2px solid #00B3FF;"> 
+                    <a class="text-[10px] ">Zendaya</a>
+               </div>
+          </div>
+
+          <div class=" scroll ">
+               <div class="bg-[#97DBF8] h-[400px]">
+                    <div class="flex justify-between  items-center">
+                         <div class="flex items-center ml-3 mt-3">
+                              <img src="./image/andrewpf.jpg" style="width:46px ; height: 46px; border-radius: 50%;">
+                              <p class="text-[14px] ml-2">Andrew Tate</p>
+                         </div>
+                         <img src="./image/tt.png" alt="" style="width: 20px; height: 20px; margin-right: 10px;">
+                    </div>
+                    <img src="./image/andrewpost.jpg" alt="" class="rounded-lg w-[289px] h-[305px] absolute left-16 hidden">
+                    <div class="flex bg-yellow-950 w-[289px] h-[40px]  justify-between items-center">
+                         <div class="flex">
+                              <i class="fa-regular fa-heart" id="heartclick"></i>
+                              <a class="ml-2 text-[10px] font-normal">1.2M</a>
+                         </div>
+                          
+                         <i class="fa-regular fa-comment flex items-center"> 
+                              <a class="ml-2 text-[10px] font-normal">1.2M</a>
+                         </i>
+                         <i class="fa-solid fa-share-nodes flex items-center "> 
+                              <a class="ml-2 text-[10px] font-normal">1.2M</a>
+                         </i>
+                    </div>
+               </div>
+
+               <div class="bg-[#97DBF8] h-[400px]">
+                    <div class="flex justify-between  items-center">
+                         <div class="flex items-center ml-3 mt-3">
+                              <img src="./image/john_cinapf.jpg" style="width:46px ; height: 46px; border-radius: 50%;">
+                              <p class="text-[14px] ml-2">John Cina</p>
+                         </div>
+                         <img src="./image/tt.png" alt="" style="width: 20px; height: 20px; margin-right: 10px;">
+                    </div>
+                    <img src="./image/john_cinapost.jpg" alt="" class="rounded-lg w-[289px] h-[305px] absolute left-16 hidden">
+                    <div class="flex bg-yellow-950 w-[289px] h-[40px]  justify-between items-center">
+                         <div class="flex">
+                              <i class="fa-regular fa-heart" id="heartclick"></i>
+                              <a class="ml-2 text-[10px] font-normal">1.2M</a>
+                         </div>
+                          
+                         <i class="fa-regular fa-comment flex items-center"> 
+                              <a class="ml-2 text-[10px] font-normal">1.2M</a>
+                         </i>
+                         <i class="fa-solid fa-share-nodes flex items-center "> 
+                              <a class="ml-2 text-[10px] font-normal">1.2M</a>
+                         </i>
+                    </div>
+               </div>
+          </div>
+
+
+
+          <nav class="h-[36px] bg-[purple-600] flex justify-around items-center">
+               <i class="fa-solid fa-film"></i>
+               <i class="fa-thin fa-user-group"></i>
+               <i class="fa-solid fa-house fa-xl"></i>
+               <i class="fa-thin fa-copy"></i>
+               <i class="fa-solid fa-bars"></i>
+          </nav>
+          
+
+     </div>
+        
+      <!-- friend    -->
+     <div class="w-[393px] h-[852px] bg-[#A6E1FA] mt-14 hidden" id="friendpage">
+          <div class="">
+               <div class="flex justify-between   h-[80px] items-center border-b-2 border-black">
+                    <p class="text-[20px] ml-4  ">Social Network</p>
+                    <i class="fa-brands fa-facebook-messenger  fa-xl mr-5"></i>
+               </div>
+          </div>
+          <div class="flex flex-col bg-gray-700 h-[168px] rounded-md mt-1">
+               <h3>Friends</h3>
+               <i class="fa-solid fa-magnifying-glass "></i>
+               <div class="flex justify-around  ">
+                    <div class="flex flex-col items-center">
+                         <img src="./image/Rbpf.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50px; stroke-width: 3px; border: 2px solid #00B3FF;"> 
+                         <a class="text-[10px] ">Robert</a>
+                    </div>
+                    <div class="flex flex-col items-center">
+                         <img src="./image/Enopf.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50px; stroke-width: 3px; border: 2px solid #00B3FF;"> 
+                         <a class="text-[10px] ">Eno_Zin</a>
+                    </div>
+                    <div class="flex flex-col items-center">
+                         <img src="./image/emily.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50px; stroke-width: 3px; border: 2px solid #00B3FF;"> 
+                         <a class="text-[10px] ">Emily</a>
+                    </div>
+                    <div class="flex flex-col items-center">
+                         <img src="./image/zin II.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50px; stroke-width: 3px; border: 2px solid #00B3FF;"> 
+                         <a class="text-[10px] ">Zin II</a>
+                    </div>
+                    <div class="flex flex-col items-center">
+                         <img src="./image/kmav.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50px; stroke-width: 3px; border: 2px solid #00B3FF;"> 
+                         <a class="text-[10px] ">Kmav</a>
+                    </div>
+                    <div class="flex flex-col items-center">
+                         <img src="./image/john_cinapf.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50px; stroke-width: 3px; border: 2px solid #00B3FF;"> 
+                         <a class="text-[10px] ">John</a>
+                    </div>
+               </div>
+          </div>
+          <div class="flex flex-col bg-red-500 h-[180px] rounded-md mt-1 ">
+               <h3 class="text-center font-bold">Groups</h3>
+               <div class="flex justify-around mt-6">
+                    <div class="flex-col flex justify-center items-center">
+                         <img src="./image/ctgroup.png" alt="" class="rounded-sm w-[48px] h-[48px]">
+                         <a>Create Group</a>
+                    </div>
+                    <div class="flex-col flex justify-center items-center">
+                         <img src="./image/creategroup.png" alt="" class="rounded-sm w-[48px] h-[48px]">
+                         <a>Create Group</a>
+                    </div>
+                    <div class="flex-col flex justify-center items-center">
+                         <i class="fa-solid fa-magnifying-glass fa-3x"></i>
+                         <a>Create Group</a>
+                    </div>
+               </div>
+
+          </div> 
+
+          <div class="flex flex-col bg-red-500 h-[180px] rounded-md mt-1">
+               <h3 class="text-center font-bold">School</h3>
+               <i class="fa-solid fa-magnifying-glass "></i>
+               <div class="flex justify-around mt-5">
+                    <div class="fles flex-col items-center">
+                         <img src="./image/itc.png" class="rounded-full w-[70px]">
+                         <a>Institute  of</a>
+                    </div>
+                    <div class="fles flex-col items-center">
+                         <img src="./image/rupp.jpg" class="rounded-full w-[70px]">
+                         <a>Royal Un</a>
+                    </div>
+                    <div class="fles flex-col items-center">
+                         <img src="./image/cadt.png" class="rounded-full w-[70px]">
+                         <a>Cambodia Ac</a>
+                    </div>
+                    <div class="fles flex-col items-center">
+                         <img src="./image/npic.png" class="rounded-full w-[70px]">
+                         <a>Nationnal</a>
+                    </div>
+               </div>
+
+          </div>
+
+          <div class="flex flex-col bg-red-500 h-[180px] rounded-md mt-1">
+               <h3 class="text-center font-bold">Departments</h3>
+               <i class="fa-solid fa-magnifying-glass "></i>
+               <div class="flex flex-col justify-around mt-5 ml-3 space-y-2">
+                    <div class="flex  items-center">
+                         <img src="./image/gic.png" class="rounded-md w-[65px]">
+                         <a class="ml-3">Department of  Information and Communication Engineering</a>
+                         <img src="./image/tt.png" class="w-[20px] mr-3">
+
+                    </div>
+                    <div class="flex  items-center">
+                         <img src="./image/gee.jpg" class="rounded-full w-[65px]">
+                         <a class="ml-3">Electrical and Energy Engineering Department</a>
+                         <img src="./image/tt.png" class="w-[20px] mr-3">
+                    </div>
+               </div>
+          </div>
+          <div class="bg-blue-500 h-[360px] absolute top-[250px] w-[393px] flex flex-col items-center">
+               <div class=" flex justify-between">
+                    <a>Discard</a>
+                    <a>Create</a>
+               </div>
+               <div class="bg-red-400 rounded-full w-[95px] h-[95px] flex items-end justify-center ">
+                    <img src="./image/cadt.png" class="w-10 ">
+               </div>
+          </div>
+          <nav class="h-[36px] bg-[purple-600] flex justify-around items-center">
+               <i class="fa-solid fa-film"></i>
+               <i class="fa-thin fa-user-group"></i>
+               <i class="fa-solid fa-house fa-xl"></i>
+               <i class="fa-solid fa-bell"></i>
+               <i class="fa-solid fa-bars"></i>
+          </nav>
+         
+     </div>
+
+     <!-- Notification -->
+     <div class="w-[393px] h-[852px] bg-[#A6E1FA] mt-14 flex flex-col justify-between hidden " id="notificationpage">
+          <div class="h-[80px] border-b-2 border-black flex justify-between items-center">
+               <p class="text-[20px] ml-4  ">Social Network</p>
+               <i class="fa-brands fa-facebook-messenger  fa-xl mr-5"></i>
+          </div>
+          <div class="  h-full flex items-center justify-center flex-col">
+               <div class="flex items-center border-b-2 border-black w-[380px] pb-1 pt-1">
+                    <img src="./image/Rbpf.jpg"class="w-[40px] rounded-full h-[40px]">
+                    <div class="flex-col flex ml-2 w-[300px]">
+                         <a class="text-[13px]">Robert react your post</a>
+                         <a class="text-[10px]">1:21am</a>
+                    </div>
+                    <img src="./image/tt.png"  class="w-[20px] ">
+                     
+               </div>
+               <div class="flex items-center border-b-2 border-black w-[380px] pb-1 pt-1">
+                    <img src="./image/Rbpf.jpg"class="w-[40px] rounded-full h-[40px]">
+                    <div class="flex-col flex ml-2 w-[300px]">
+                         <a class="text-[13px]">Robert react your post</a>
+                         <a class="text-[10px]">1:21am</a>
+                    </div>
+                    <img src="./image/tt.png"  class="w-[20px] ">
+                     
+               </div>
+               <div class="flex items-center border-b-2 border-black w-[380px] pb-1 pt-1">
+                    <img src="./image/Rbpf.jpg"class="w-[40px] rounded-full h-[40px]">
+                    <div class="flex-col flex ml-2 w-[300px]">
+                         <a class="text-[13px]">Robert react your post</a>
+                         <a class="text-[10px]">1:21am</a>
+                    </div>
+                    <img src="./image/tt.png"  class="w-[20px] ">
+                     
+               </div>
+               <div class="flex items-center border-b-2 border-black w-[380px] pb-1 pt-1">
+                    <img src="./image/Rbpf.jpg"class="w-[40px] rounded-full h-[40px]">
+                    <div class="flex-col flex ml-2 w-[300px]">
+                         <a class="text-[13px]">Robert react your post</a>
+                         <a class="text-[10px]">1:21am</a>
+                    </div>
+                    <img src="./image/tt.png"  class="w-[20px] ">
+                     
+               </div>
+               <div class="flex items-center border-b-2 border-black w-[380px] pb-1 pt-1">
+                    <img src="./image/Rbpf.jpg"class="w-[40px] rounded-full h-[40px]">
+                    <div class="flex-col flex ml-2 w-[300px]">
+                         <a class="text-[13px]">Robert react your post</a>
+                         <a class="text-[10px]">1:21am</a>
+                    </div>
+                    <img src="./image/tt.png"  class="w-[20px] ">
+                     
+               </div>
+               <div class="flex items-center border-b-2 border-black w-[380px] pb-1 pt-1">
+                    <img src="./image/Rbpf.jpg"class="w-[40px] rounded-full h-[40px]">
+                    <div class="flex-col flex ml-2 w-[300px]">
+                         <a class="text-[13px]">Robert react your post</a>
+                         <a class="text-[10px]">1:21am</a>
+                    </div>
+                    <img src="./image/tt.png"  class="w-[20px] ">
+                     
+               </div>
+               <div class="flex items-center border-b-2 border-black w-[380px] pb-1 pt-1">
+                    <img src="./image/Rbpf.jpg"class="w-[40px] rounded-full h-[40px]">
+                    <div class="flex-col flex ml-2 w-[300px]">
+                         <a class="text-[13px]">Robert react your post</a>
+                         <a class="text-[10px]">1:21am</a>
+                    </div>
+                    <img src="./image/tt.png"  class="w-[20px] ">
+                     
+               </div>
+               <div class="flex items-center border-b-2 border-black w-[380px] pb-1 pt-1">
+                    <img src="./image/Rbpf.jpg"class="w-[40px] rounded-full h-[40px]">
+                    <div class="flex-col flex ml-2 w-[300px]">
+                         <a class="text-[13px]">Robert react your post</a>
+                         <a class="text-[10px]">1:21am</a>
+                    </div>
+                    <img src="./image/tt.png"  class="w-[20px] ">
+                     
+               </div>
+               <div class="flex items-center border-b-2 border-black w-[380px] pb-1 pt-1">
+                    <img src="./image/Rbpf.jpg"class="w-[40px] rounded-full h-[40px]">
+                    <div class="flex-col flex ml-2 w-[300px]">
+                         <a class="text-[13px]">Robert react your post</a>
+                         <a class="text-[10px]">1:21am</a>
+                    </div>
+                    <img src="./image/tt.png"  class="w-[20px] ">
+                     
+               </div>
+               <div class="flex items-center border-b-2 border-black w-[380px] pb-1 pt-1">
+                    <img src="./image/Rbpf.jpg"class="w-[40px] rounded-full h-[40px]">
+                    <div class="flex-col flex ml-2 w-[300px]">
+                         <a class="text-[13px]">Robert react your post</a>
+                         <a class="text-[10px]">1:21am</a>
+                    </div>
+                    <img src="./image/tt.png"  class="w-[20px] ">
+                     
+               </div>
+               <div class="flex items-center border-b-2 border-black w-[380px] pb-1 pt-1">
+                    <img src="./image/Rbpf.jpg"class="w-[40px] rounded-full h-[40px]">
+                    <div class="flex-col flex ml-2 w-[300px]">
+                         <a class="text-[13px]">Robert react your post</a>
+                         <a class="text-[10px]">1:21am</a>
+                    </div>
+                    <img src="./image/tt.png"  class="w-[20px] ">
+                     
+               </div>
+               <div class="flex items-center border-b-2 border-black w-[380px] pb-1 pt-1">
+                    <img src="./image/Rbpf.jpg"class="w-[40px] rounded-full h-[40px]">
+                    <div class="flex-col flex ml-2 w-[300px]">
+                         <a class="text-[13px]">Robert react your post</a>
+                         <a class="text-[10px]">1:21am</a>
+                    </div>
+                    <img src="./image/tt.png"  class="w-[20px] ">
+                     
+               </div>
+               <div class="flex items-center border-b-2 border-black w-[380px] pb-1 pt-1">
+                    <img src="./image/Rbpf.jpg"class="w-[40px] rounded-full h-[40px]">
+                    <div class="flex-col flex ml-2 w-[300px]">
+                         <a class="text-[13px]">Robert react your post</a>
+                         <a class="text-[10px]">1:21am</a>
+                    </div>
+                    <img src="./image/tt.png"  class="w-[20px] ">
+                     
+               </div>
+               <div class="flex items-center border-b-2 border-black w-[380px] pb-1 pt-1">
+                    <img src="./image/Rbpf.jpg"class="w-[40px] rounded-full h-[40px]">
+                    <div class="flex-col flex ml-2 w-[300px]">
+                         <a class="text-[13px]">Robert react your post</a>
+                         <a class="text-[10px]">1:21am</a>
+                    </div>
+                    <img src="./image/tt.png"  class="w-[20px] ">
+                     
+               </div>
+               <div class="flex items-center border-b-2 border-black w-[380px] pb-1 pt-1">
+                    <img src="./image/Rbpf.jpg"class="w-[40px] rounded-full h-[40px]">
+                    <div class="flex-col flex ml-2 w-[300px]">
+                         <a class="text-[13px]">Robert react your post</a>
+                         <a class="text-[10px]">1:21am</a>
+                    </div>
+                    <img src="./image/tt.png"  class="w-[20px] ">
+                     
+               </div>
+               
+               
+          </div>
+          <div class="h-[36px] border-t-2 border-black flex justify-around items-center">
+               <i class="fa-solid fa-film"></i>
+               <i class="fa-thin fa-user-group"></i>
+               <i class="fa-solid fa-house fa-xl"></i>
+               <i class="fa-solid fa-bell"></i>
+               <i class="fa-solid fa-bars"></i>
+          </div>
+     </div>
+ 
+
+     <!-- Menu -->
+     <div class="w-[393px] h-[852px] bg-[#A6E1FA] mt-14 flex flex-col justify-between hidden" id="notificationpage">
+          <div class="h-[80px] border-b-2 border-black flex justify-between items-center">
+               <p class="text-[20px] ml-4  ">Social Network</p>
+               <i class="fa-brands fa-facebook-messenger  fa-xl mr-5"></i>
+          </div>
+          <div class="  h-full flex flex-col">
+               <div class="flex  justify-between   mt-4">
+                    <div class="flex items-center ml-3">
+                         <img src="./image/user.jpg" class="rounded-full w-[50px] h-[50px]">
+                         <a>San Vannak</a>
+                    </div>
+                    <div class="flex flex-col items-center justify-center mr-3">
+                         <i class="fa-solid fa-repeat"></i>
+                         <a class="text-[10px]">Switch Account</a>
+                    </div>
+               </div>
+
+               <div class="flex flex-col space-y-4 mt-10">
+                    <div class="bg-[#0E6BA8] h-[80px] w-[350px] flex items-center ml-3 pl-4 rounded-lg">
+                         <img src="./image/andrewpf.jpg" class="w-[40px] rounded-sm">
+                         <h3 class="font-bold ml-3">MarketPlace</h3>
+                    </div>
+                    <div class="bg-[#0E6BA8] h-[80px] w-[350px] flex items-center ml-3 pl-4 rounded-lg">
+                         <img src="./image/andrewpf.jpg" class="w-[40px] rounded-sm">
+                         <h3 class="font-bold ml-3">MarketPlace</h3>
+                    </div>
+                    <div class="bg-[#0E6BA8] h-[80px] w-[350px] flex items-center ml-3 pl-4 rounded-lg">
+                         <img src="./image/andrewpf.jpg" class="w-[40px] rounded-sm">
+                         <h3 class="font-bold ml-3">MarketPlace</h3>
+                    </div>
+                    <div class="bg-[#0E6BA8] h-[80px] w-[350px] flex items-center ml-3 pl-4 rounded-lg">
+                         <img src="./image/andrewpf.jpg" class="w-[40px] rounded-sm">
+                         <h3 class="font-bold ml-3">MarketPlace</h3>
+                    </div>
+                    <div class="bg-[#0E6BA8] h-[80px] w-[350px] flex items-center ml-3 pl-4 rounded-lg">
+                         <img src="./image/andrewpf.jpg" class="w-[40px] rounded-sm">
+                         <h3 class="font-bold ml-3">MarketPlace</h3>
+                    </div>
+
+                    <div class="ml-3">
+                         <i class="fa-solid fa-heart fa-2xl"></i>
+                         <a>Help and Support</a>
+                    </div>
+                    <div class="ml-3" id="setting">
+                         <i class="fa-solid fa-heart fa-2xl"></i>
+                         <a>Setting</a>
+                    </div>
+
+               </div>
+               
+
+               
+          </div>
+          <div class="h-[36px] border-t-2 border-black flex justify-around items-center">
+               <i class="fa-solid fa-film"></i>
+               <i class="fa-thin fa-user-group"></i>
+               <i class="fa-solid fa-house fa-xl"></i>
+               <i class="fa-solid fa-bell"></i>
+               <i class="fa-solid fa-bars"></i>
+          </div>
+     </div>
+
+     <!-- settingpage -->
+     <div class="w-[393px] h-[852px] bg-[#A6E1FA] mt-14 flex flex-col justify-between hidden" id="notificationpage">
+          <div class="h-[80px] border-b-2 border-black flex  items-center">
+               <i class="fa-brands fa-facebook-messenger  fa-xl ml-5"></i>
+               <i class="fa-solid fa-gear text-[40px] ml-3"></i>
+               <p class="text-[20px] ml-3  ">Social Network</p>
+                
+          </div>
+          <div class="  h-full flex flex-col items-center space-y-4">
+               <div class="bg-[#0E6BA8] w-[348px] h-[47px] rounded-lg flex items-center mt-5" id="Logout">
+                    <a class="text-red-500 ml-4">Log Out</a>
+               </div>
+               <div class="bg-[#0E6BA8] w-[348px] h-[47px] rounded-lg flex items-center pl-4">Turn to dark mode</div>
+               <div class="bg-[#0E6BA8] w-[348px] h-[47px] rounded-lg flex items-center pl-4">Change Password</div>
+
+
+               
+          </div>
+          <!-- <div class="h-[36px] border-t-2 border-black flex justify-around items-center">
+               <i class="fa-solid fa-film"></i>
+               <i class="fa-thin fa-user-group"></i>
+               <i class="fa-solid fa-house fa-xl"></i>
+               <i class="fa-solid fa-bell"></i>
+               <i class="fa-solid fa-bars"></i>
+          </div> -->
+     </div>
+
+     <!-- Change  Passwor -->
+     <div class="w-[393px] h-[852px] bg-[#A6E1FA] mt-14 flex flex-col justify-between hidden" id="notificationpage">
+          <div class="h-[80px] border-b-2 border-black flex  items-center">
+               <i class="fa-solid fa-circle-arrow-left pl-3"></i>
+               <p class="text-[20px] ml-3  font-bold">Chang Password</p>
+                
+          </div>
+          <div class="  h-full flex flex-col items-center space-y-4 mt-6">
+               <input type="password" required placeholder=" Recent Password" id="password" class="w-[348px] h-[47px] rounded-md px-3 bg-[#0E6BA8] font-extralight text-white">
+               <input type="password" required placeholder=" Recent Password" id="password" class="w-[348px] h-[47px] rounded-md px-3 bg-[#0E6BA8] font-extralight text-white">
+               <input type="password" required placeholder=" Recent Password" id="password" class="w-[348px] h-[47px] rounded-md px-3 bg-[#0E6BA8] font-extralight text-white">
+
+               <div class="w-[348px] h-[47px] flex justify-between">
+                    <a class="font-light">Forgot Password?</a>
+                    <button class="w-[115px] h-[42px] bg-[#0E6BA8] text-white font-extralight rounded-lg text-md"> Save Change</button>
+               </div>
+               
+          </div>
+          
+     </div>
+
+     <!-- Video -->
+     <!-- <div class="w-[393px] h-[852px] bg-[#A6E1FA] mt-14 flex flex-col justify-between " id="notificationpage">
+          <div class="h-[80px] border-b-2 border-black flex  items-center">
+               <i class="fa-brands fa-facebook-messenger  fa-xl ml-5"></i>
+               <i class="fa-solid fa-gear text-[40px] ml-3"></i>
+               <p class="text-[20px] ml-3  ">Social Network</p>
+                
+          </div>
+          <div class="  h-full flex flex-col items-center space-y-4">
+               <div class="bg-[#0E6BA8] w-[348px] h-[47px] rounded-lg flex items-center mt-5" id="Logout">
+                    <a class="text-red-500 ml-4">Log Out</a>
+               </div>
+               <div class="bg-[#0E6BA8] w-[348px] h-[47px] rounded-lg flex items-center pl-4">Turn to dark mode</div>
+               <div class="bg-[#0E6BA8] w-[348px] h-[47px] rounded-lg flex items-center pl-4">Change Password</div>
+
+
+               
+          </div>
+          <div class="h-[36px] border-t-2 border-black flex justify-around items-center">
+               <i class="fa-solid fa-film"></i>
+               <i class="fa-thin fa-user-group"></i>
+               <i class="fa-solid fa-house fa-xl"></i>
+               <i class="fa-solid fa-bell"></i>
+               <i class="fa-solid fa-bars"></i>
+          </div>
+          <video src="movie.mp4" type="video/mp4" controls width="320" height="240">
+               Your browser does not support the video tag.
+             </video>
+             
+     </div> -->
+
+
+     
+
+     <script src="function.js" ></script>
+</body>
+</html>
