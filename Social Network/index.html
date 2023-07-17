@@ -7,9 +7,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
      <link rel="stylesheet" href="style.css">
-</head>
-<body>
-     <div class="w-[393px] h-[852px] bg-[#A6E1FA] hidden" id="fisrpage">
+ </head>
+<body class="bg-[#A6E1FA]" >
+     <div class="w-[393px] h-[852px]   hidden" id="fisrpage">
           <div class=" w-full h-[200px]">
                <img class="rounded-full w-28 absolute top-[80px] left-[130px]"src="./image/Logo.jpg" alt="" >
           </div>
@@ -24,7 +24,7 @@
      </div>
 
      <!-- Login Page -->
-     <div class="w-[393px] h-[852px] bg-[#A6E1FA]  hidden"  id="logeinpage">
+     <div class="w-[393px] h-[852px]    hidden"  id="logeinpage">
           <div class=" w-full h-[200px]">
                <img class="rounded-full w-28 absolute top-[80px] left-[130px]"src="./image/Logo.jpg" alt="" >
           </div>
@@ -54,7 +54,7 @@
      </div>
 
      <!-- RegisterPage -->
-     <div class="w-[393px] h-[852px] bg-[#A6E1FA] hidden" id="Registerpage">
+     <div class="w-[393px] h-[852px]   hidden" id="Registerpage">
           <div class=" w-full h-[200px]">
                <i class="fa-solid fa-circle-arrow-left p-6"></i>
                <img class="rounded-full w-28 absolute top-[80px] left-[130px]"src="./image/Logo.jpg" alt="" >
@@ -85,7 +85,7 @@
      </div>
  
      <!-- Homepage -->
-     <div class="w-[393px] h-[852px] bg-[#A6E1FA] mt-6 hidden" id="homepage">
+     <div class="w-[393px] h-[852px]   mt-6 hidden" id="homepage">
           <div class="flex justify-between   h-[80px] items-center">
                <p class="text-[20px] ml-4  ">Social Network</p>
                <i class="fa-brands fa-facebook-messenger  fa-xl mr-5"></i>
@@ -187,7 +187,7 @@
      </div>
         
       <!-- friend    -->
-     <div class="w-[393px] h-[852px] bg-[#A6E1FA] mt-14 hidden" id="friendpage">
+     <div class="w-[393px] h-[852px]   mt-14 hidden" id="friendpage">
           <div class="">
                <div class="flex justify-between   h-[80px] items-center border-b-2 border-black">
                     <p class="text-[20px] ml-4  ">Social Network</p>
@@ -304,7 +304,7 @@
      </div>
 
      <!-- Notification -->
-     <div class="w-[393px] h-[852px] bg-[#A6E1FA] mt-14 flex flex-col justify-between hidden " id="notificationpage">
+     <div class="w-[393px] h-[852px]   mt-14 flex flex-col justify-between hidden " id="notificationpage">
           <div class="h-[80px] border-b-2 border-black flex justify-between items-center">
                <p class="text-[20px] ml-4  ">Social Network</p>
                <i class="fa-brands fa-facebook-messenger  fa-xl mr-5"></i>
@@ -459,7 +459,7 @@
  
 
      <!-- Menu -->
-     <div class="w-[393px] h-[852px] bg-[#A6E1FA] mt-14 flex flex-col justify-between hidden" id="notificationpage">
+     <div class="w-[393px] h-[852px]  mt-14 flex flex-col justify-between hidden" id="notificationpage">
           <div class="h-[80px] border-b-2 border-black flex justify-between items-center">
                <p class="text-[20px] ml-4  ">Social Network</p>
                <i class="fa-brands fa-facebook-messenger  fa-xl mr-5"></i>
@@ -522,7 +522,7 @@
      </div>
 
      <!-- settingpage -->
-     <div class="w-[393px] h-[852px] bg-[#A6E1FA] mt-14 flex flex-col justify-between hidden" id="notificationpage">
+     <div class="w-[393px] h-[852px]   mt-14 flex flex-col justify-between hidden" id="notificationpage">
           <div class="h-[80px] border-b-2 border-black flex  items-center">
                <i class="fa-brands fa-facebook-messenger  fa-xl ml-5"></i>
                <i class="fa-solid fa-gear text-[40px] ml-3"></i>
@@ -530,10 +530,15 @@
                 
           </div>
           <div class="  h-full flex flex-col items-center space-y-4">
-               <div class="bg-[#0E6BA8] w-[348px] h-[47px] rounded-lg flex items-center mt-5" id="Logout">
+               <div class="bg-[#0E6BA8] w-[348px] h-[47px] rounded-lg flex items-center   mt-5" id="Logout">
                     <a class="text-red-500 ml-4">Log Out</a>
+                     
                </div>
-               <div class="bg-[#0E6BA8] w-[348px] h-[47px] rounded-lg flex items-center pl-4">Turn to dark mode</div>
+               <div class="bg-[#0E6BA8] w-[348px] h-[47px] rounded-lg flex justify-between items-center pl-4" id="TurnToDarkMode">Turn to dark mode
+                    <i class="fa-solid fa-toggle-on fa-2xl mr-3"></i>
+                     
+               </div>
+               
                <div class="bg-[#0E6BA8] w-[348px] h-[47px] rounded-lg flex items-center pl-4">Change Password</div>
 
 
@@ -548,8 +553,8 @@
           </div> -->
      </div>
 
-     <!-- Change  Passwor -->
-     <div class="w-[393px] h-[852px] bg-[#A6E1FA] mt-14 flex flex-col justify-between hidden" id="notificationpage">
+     <!-- Change  Password -->
+     <div class="w-[393px] h-[852px]   mt-14 flex flex-col justify-between hidden" id="notificationpage">
           <div class="h-[80px] border-b-2 border-black flex  items-center">
                <i class="fa-solid fa-circle-arrow-left pl-3"></i>
                <p class="text-[20px] ml-3  font-bold">Chang Password</p>
@@ -594,15 +599,272 @@
                <i class="fa-solid fa-bell"></i>
                <i class="fa-solid fa-bars"></i>
           </div>
-          <video src="movie.mp4" type="video/mp4" controls width="320" height="240">
-               Your browser does not support the video tag.
-             </video>
+         
              
      </div> -->
 
 
-     
+     <!-- Chat List -->
+     <div class="w-[393px] h-[852px]   mt-14 flex flex-col justify-between hidden " id="notificationpage">
+          <div class="h-[80px]  flex  items-center ">
+               <i class="fa-solid fa-arrow-left ml-3"></i>
+               <b class="absolute left-44 ">Chats</b>
+          </div>
+          <div class="flex">
+               <div class="bg-[#97DBF8] w-[20px] h-[28px] rounded-l-full px-4 ml-3 items-center justify-center">
+                    <i class="fa-solid fa-search"></i>
+               </div>
+                
+               <input type="text" placeholder="Search" class="h-[28px] w-[327px]   rounded-r-full px-3 bg-[#97DBF8] text-sm " >
+          </div>
+           
+          <div class="  h-full flex   flex-col">
+               <div class="flex h-[70px]   items-center justify-between pl-2 pt-3">
+                    <div class="flex flex-col items-center">
+                         <img src="./image/jennie.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50px; stroke-width: 3px; border: 2px solid #00B3FF;"> 
+                         <a class="text-[10px] ">Jennie</a>
+                    </div>
+                    <div class="flex flex-col items-center">
+                         <img src="./image/Rbpf.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50px; stroke-width: 3px; border: 2px solid #00B3FF;"> 
+                         <a class="text-[10px] ">Robert</a>
+                    </div>
+                    <div class="flex flex-col items-center">
+                         <img src="./image/Enopf.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50px; stroke-width: 3px; border: 2px solid #00B3FF;"> 
+                         <a class="text-[10px] ">Eno_Zin</a>
+                    </div>
+                    <div class="flex flex-col items-center">
+                         <img src="./image/emily.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50px; stroke-width: 3px; border: 2px solid #00B3FF;"> 
+                         <a class="text-[10px] ">Emily</a>
+                    </div>
+                    <div class="flex flex-col items-center">
+                         <img src="./image/zin II.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50px; stroke-width: 3px; border: 2px solid #00B3FF;"> 
+                         <a class="text-[10px] ">Zin II</a>
+                    </div>
+                    <div class="flex flex-col items-center">
+                         <img src="./image/kmav.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50px; stroke-width: 3px; border: 2px solid #00B3FF;"> 
+                         <a class="text-[10px] ">Kmav</a>
+                    </div>
+                    <div class="flex flex-col items-center">
+                         <img src="./image/zendaya.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50px; stroke-width: 3px; border: 2px solid #00B3FF;"> 
+                         <a class="text-[10px] ">Zendaya</a>
+                    </div>
+               </div>
 
-     <script src="function.js" ></script>
+               <div class="flex mt-5 items-center ml-3 font-bold">
+                    <img src="./image/Enopf.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50px; stroke-width: 3px; border: 2px solid #00B3FF;"> 
+                    <div class="flex flex-col   ml-3 w-full  ">
+                         <label class="text-md">Eno_Zin</label>
+                         <label class="text-xs">Eno_Zin: Nik Eno ot bart?</label>
+                    </div>
+                    <a class="text-[12px] mr-2">4:23pm</a>
+               </div>
+               <div class="flex mt-5 items-center ml-3 font-bold">
+                    <img src="./image/zin II.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50px; stroke-width: 3px; border: 2px solid #00B3FF;"> 
+                    <div class="flex flex-col   ml-3 w-full  ">
+                         <label class="text-md">zin II BCzin</label>
+                         <label class="text-xs">zin II BCzin: Kae klun hz</label>
+                    </div>
+                    <a class="text-[12px] mr-2">2:33 am</a>
+               </div>
+               <div class="flex mt-5 items-center ml-3 font-bold bg-red-700" id="chatroom">
+                    <img src="./image/Tom.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50px; stroke-width: 3px; border: 2px solid #00B3FF;"> 
+                    <div class="flex flex-col   ml-3 w-full  ">
+                         <label class="text-md">Ah Sml</label>
+                         <label class="text-xs">Ah sml: Hey Vannak I broke up with MJ</label>
+                    </div>
+                    <a class="text-[12px] mr-2">1:43 am</a>
+               </div>
+               <div class="flex mt-5 items-center ml-3  ">
+                    <img src="./image/itc.png" alt="" style="width: 50px; height: 50px; border-radius: 50px; stroke-width: 3px; border: 2px solid #00B3FF;"> 
+                    <div class="flex flex-col   ml-3 w-full  ">
+                         <label class="text-md">GIC-B</label>
+                         <label class="text-xs">Mazer: forward a message</label>
+                    </div>
+                    <a class="text-[12px] mr-2">12:21 pm</a>
+               </div>
+               <div class="flex mt-5 items-center ml-3 font-bold">
+                    <img src="./image/jackie_chan.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50px; stroke-width: 3px; border: 2px solid #00B3FF;"> 
+                    <div class="flex flex-col   ml-3 w-full  ">
+                         <label class="text-md">Pu long</label>
+                         <label class="text-xs">Pu long: How have you been? </label>
+                    </div>
+                    <a class="text-[12px] mr-2">12:21 pm</a>
+               </div>
+               <div class="flex mt-5 items-center ml-3  ">
+                    <img src="./image/kmav.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50px; stroke-width: 3px; border: 2px solid #00B3FF;"> 
+                    <div class="flex flex-col   ml-3 w-full  ">
+                         <label class="text-md">Kmav</label>
+                         <label class="text-xs">you: You’re liar</label>
+                    </div>
+                    <a class="text-[12px] mr-2">11:12 pm</a>
+               </div>
+               <div class="flex mt-5 items-center ml-3 font-bold">
+                    <img src="./image/jennie.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50px; stroke-width: 3px; border: 2px solid #00B3FF;"> 
+                    <div class="flex flex-col   ml-3 w-full  ">
+                         <label class="text-md"> Oun Jennie🖤</label>
+                         <label class="text-xs">Emillie: Nik B nak nas</label>
+                    </div>
+                    <a class="text-[12px] mr-2">10:02 pm</a>
+               </div>
+               <div class="flex mt-5 items-center ml-3 font-bold">
+                    <img src="./image/john_cinapf.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50px; stroke-width: 3px; border: 2px solid #00B3FF;"> 
+                    <div class="flex flex-col   ml-3 w-full  ">
+                         <label class="text-md">John Cina</label>
+                         <label class="text-xs">Have you Listen Cupid yet?</label>
+                    </div>
+                    <a class="text-[12px] mr-2">4:23pm</a>
+               </div>
+               <div class="flex mt-5 items-center ml-3 font-bold">
+                    <img src="./image/mlbb.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50px; stroke-width: 3px; border: 2px solid #00B3FF;"> 
+                    <div class="flex flex-col   ml-3 w-full  ">
+                         <label class="text-md">MLBB</label>
+                         <label class="text-xs">Dai gold: ah nak lg laor mes?</label>
+                    </div>
+                    <a class="text-[12px] mr-2">10:23 pm</a>
+               </div>
+               
+          </div>
+          <div class="h-[40px]   bg-[#97DBF8]   flex justify-around items-center">
+               <i class="fa-solid fa-message text-[20px]"></i>
+               <i class="fa-solid fa-phone text-[30px]"></i>
+               <i class="fa-solid fa-bell text-[20px]"></i>
+          </div>
+     </div>
+
+     <!-- Chat room -->
+     <div class="w-[393px] h-[852px]   mt-14 flex flex-col justify-between   hidden " id="notificationpage">
+          <div class="h-[117px]  flex bg-[#66c1e7] items-center justify-between">
+               <i class="fa-solid fa-arrow-left ml-3"></i>
+               <div class="flex flex-col items-center ml-8">
+                    <img src="./image/Tom.jpg" alt=""  class="rounded-full h-[50px]  "> 
+                    <a class="text-[14px] ">Ah Sml </a>
+               </div>
+               <div class="flex  text-[20px] space-x-4 mr-4">
+                    <i class="fa-solid fa-video  "></i>
+                    <i class="fa-solid fa-phone  "></i>
+                    <i class="fa-solid fa-ellipsis-vertical  "></i>
+               </div>
+          </div>
+           
+           
+          <div class="  h-full flex   flex-col">
+               <div class="flex bg-red-600  justify-start  items-end ml-3 ">
+                    <img src="./image/Tom.jpg" alt="" class=" mb-6  rounded-full w-[20px] ">
+                    <div class=" flex-col flex space-y-1 ml-2">
+                         <img src="./image/Tom-and-Zen.jpeg" alt="" class="h-[190px] w-[200px]">
+                         <label class="bg-[#6AC4FF] rounded-full  text-sm p-1 ">Look dude! How sweet am I?</label>
+                         <a class="   text-end text-[8px]">8:24 PM</a>
+                    </div>
+               </div>
+
+               <div class="flex bg-green-600  justify-end  items-end ml-3 ">
+                     
+                    <div class=" flex-col flex  h-[120px] space-y-1 justify-center  ">
+                         <div class="flex flex-col">
+                              <label class="bg-[#6AC4FF] rounded-full w-[120px] text-sm p-1  ">Nah, you stupid  </label>
+                              <label class="bg-[#6AC4FF] rounded-full  text-sm p-1 ">MJ is in relationship with Ned  </label>
+                         </div>
+                          
+                         <a class="   text-start text-[8px]">8:24 PM</a>
+                    </div>
+               </div>
+                
+          </div>
+          <div class="h-[40px]   bg-[#97DBF8]   flex  justify-evenly items-center">
+               <i class="fa-solid fa-link"></i>
+               <i class="fa-solid fa-photo-film"></i>
+               <i class="fa-solid fa-microphone"></i>
+               <input type="text" placeholder="Text" class="px-2 rounded-full bg-[#6AC4FF]">
+               <i class="fa-solid fa-circle-check"></i>
+          </div>
+     </div>
+
+
+     <!-- Profile -->
+     <div class="w-[393px] h-[852px] bg-[#148abd] mt-14 flex flex-col   " id="Profile_page">
+          <div class="w-[393px] h-[230px] bg-cover bg-bottom  " style="background-image:url('https://cdn.pixabay.com/photo/2018/01/10/11/47/nature-3073677_640.jpg') ;">
+               <i class="fa-solid fa-arrow-left ml-3"></i>
+          </div>
+          
+               <div class="  flex flex-col items-center   relative top-[-50px] left-[-110px]">
+                    <img src="./image/user.jpg" alt=""  class="rounded-full h-[105px] w-[105px]   "> 
+                    <a class="text-xl mt-1 ">Ah Sml </a>
+               </div>
+               <div class=" flex space-x-2   relative top-[-50px] justify-end mr-2">
+                    <div class="bg-[#3BAEFA] w-[120px] h-[37px] flex items-center justify-center space-x-3 rounded-md text-xl">
+                         <i class="fa-solid fa-plus"></i>
+                         <label>Post</label>
+                    </div>
+                    <div class="bg-[#3BAEFA] w-[140px] h-[37px] flex items-center justify-center space-x-3 rounded-md text-xl">
+                         <i class="fa-solid fa-edit"></i>
+                         <label>Edit profile</label>
+                    </div>
+               </div>
+               <div class="flex space-x-3 ml-4">
+                    <label class="bg-[#3BAEFA] w-[120px] h-[37px] flex items-center justify-center space-x-3 rounded-md text-xl">
+                         421 Posts
+                    </label>
+                    <label class="bg-[#3BAEFA] w-[120px] h-[37px] flex items-center justify-center space-x-3 rounded-md text-xl">
+                         4.2k Friends
+                   </label>
+               </div>
+               <div class="ml-4 space-y-3 mt-2">
+                    Information
+                    <div class="    mt-2 space-x-3  text-xl">
+                         <i class="fa-solid fa-graduation-cap"></i>
+                         <label class="text-[16px]">Study at: Institute of Technology of Cambodia</label>
+                    </div>
+                    <div class="    space-x-5  text-xl">
+                         <i class="fa-solid fa-location-dot"></i>
+                         <label class="text-[16px] ">From: Phnom Penh</label>
+                    </div>
+                    <div class="    space-x-3  text-xl">
+                         <i class="fa-solid fa-user-plus"></i>
+                         <label class="text-[16px]">Follower 1.2M</label>
+                    </div>
+                     
+               </div>
+               <div class="bg-[#91C6DD] w-full h-[133px]  "  >
+                    <a class="text-xs ml-3">Media</a>
+                    <div class="flex justify-evenly   "> 
+                         <img src="./image/user.jpg" alt="" class="w-[65px] h-[85px] rounded-md">
+                         <img src="./image/1.jpg" alt="" class="w-[65px] h-[85px] rounded-md">
+                         <img src="./image/3.jpg" alt="" class="w-[65px] h-[85px] rounded-md">
+                         <img src="./image/2.jpg" alt="" class="w-[65px] h-[85px] rounded-md">
+                         <img src="./image/4.jpg" alt="" class="w-[65px] h-[85px] rounded-md">
+                          
+                    </div>
+                    <button class="text-xs bg-[#A6E1FA] w-full flex justify-center mt-2   ">See More</button>
+
+               </div>
+               <div class="  h-[400px]">
+                    <div class="flex justify-between  items-center">
+                         <div class="flex items-center ml-3 mt-3">
+                              <img src="./image/john_cinapf.jpg" style="width:46px ; height: 46px; border-radius: 50%;">
+                              <p class="text-[14px] ml-2">John Cina</p>
+                         </div>
+                         <img src="./image/tt.png" alt="" style="width: 20px; height: 20px; margin-right: 10px;">
+                    </div>
+                    <img src="./image/john_cinapost.jpg" alt="" class="rounded-lg w-[289px] h-[305px] absolute left-16  ">
+                    <div class="flex bg-yellow-950 w-[289px] h-[40px]  justify-between items-center">
+                         <div class="flex">
+                              <i class="fa-regular fa-heart" id="heartclick"></i>
+                              <a class="ml-2 text-[10px] font-normal">1.2M</a>
+                         </div>
+                          
+                         <i class="fa-regular fa-comment flex items-center"> 
+                              <a class="ml-2 text-[10px] font-normal">1.2M</a>
+                         </i>
+                         <i class="fa-solid fa-share-nodes flex items-center "> 
+                              <a class="ml-2 text-[10px] font-normal">1.2M</a>
+                         </i>
+                    </div>
+               </div>
+        
+         
+             
+     </div>
+
+     <script src="function.js"defer ></script>
 </body>
 </html>
