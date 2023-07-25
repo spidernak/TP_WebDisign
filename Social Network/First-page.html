@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="w-[393px] h-[852px]    border-4 border-black rounded-[30px]  flex flex-col "  >
+         
+        
+        <div class=" flex items-center justify-center h-full">
+            <div id="my-div" class="w-[180px] h-[180px] rounded-full bg-[#0E6BA8] text-[20px] font-extralight text-white flex items-center justify-center"> Socila Network</div>
+        </div>
+        <div class="h10 w-28 bg-black rounded-full absolute left-32 mt-1">d</div>
+    </div>
+
+    <div id="my-div2" class="  rounded-[30px]">
+        This is my div.
+      </div>
+      
+
+    <style>
+        #my-div {
+ 
+          cursor: pointer;
+          animation: zoom-in 3s ease-in-out;
+        }
+        
+        @keyframes zoom-in {
+          0% {
+       
+            border-radius: 50%;
+          }
+          50% {
+            height:852px ;
+            width: 393px;
+            border-radius: 30px;
+          }
+          100% {
+            height:850px ;
+            width: 393px;
+            border-radius: 30px;
+          }
+        }
+        
+
+         #my-div2{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 393px;
+            height: 852px;
+            background-color: red;
+            opacity: 0;
+            animation: slide-in 1s ease-in-out;
+            animation-delay: 3s;
+            }
+
+            @keyframes slide-in {
+            0% {
+                transform: translate(0, -100px);
+                opacity: 1;
+            }
+            100% {
+                transform: translate(0, 0);
+                opacity: 1;
+            }
+        } 
+
+          </style>
+</body>
+</html>

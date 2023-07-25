@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    #KKK::-webkit-scrollbar{
+    display: none;
+}
+
+.container{
+    position: relative;
+  }
+  .container .image-container{
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+    
+  }
+  .container .image-container .image{
+    height: 85px;
+    width: 66px;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .container .image-container .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+  }
+
+  .container .full-image{
+    position: fixed;
+    top: 0; left: 0;
+    background: rgba(0, 0, 0, 0.616);
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    z-index: 100;
+    /* display: none; */
+  }
+  .container .full-image span{
+    position: absolute;
+    top:0; right: 10px;
+    color: #3BAEFA;
+    font-size: 25px;
+    cursor: pointer;
+    z-index: 100;
+  }
+  .container .full-image img{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+  } 
+</style>
+<body class="p-56">
+     <div class="w-[393px] h-[852px] bg-[#A6E1FA] border-4 border-black rounded-[30px] mt-14 flex flex-col justify-between   "  >
+     
+         
+         <div class="  h-full flex   rounded-3xl flex-col   snap-y snap-mandatory  overflow-scroll  " id="KKK">
+          <div class=" h-[230px] bg-cover bg-bottom flex-shrink-0  " style="background-image:url('https://cdn.pixabay.com/photo/2018/01/10/11/47/nature-3073677_640.jpg') ;">
+               <a href="Menubar.html">
+                  <i class="fa-solid fa-arrow-left ml-3"></i>
+               </a>
+          </div>
+          <div class="flex-shrink-0">
+               <div class="  flex flex-col items-center   relative top-[-50px] left-[-110px]">
+                    <img src="./image/user.jpg" alt=""  class="rounded-full h-[105px] w-[105px]   "> 
+                    <a class="text-xl mt-1 ">San Vannak </a>
+               </div>
+               <div class=" flex space-x-2   relative top-[-50px] justify-end mr-2 mt-4 ">
+                    <div class="bg-[#3BAEFA] w-[120px] h-[37px] flex items-center justify-center space-x-3 rounded-md text-xl">
+                         <i class="fa-solid fa-plus"></i>
+                         <label>Post</label>
+                    </div>
+                    <div class="bg-[#3BAEFA] w-[140px] h-[37px] flex items-center justify-center space-x-3 rounded-md text-xl">
+                         <i class="fa-solid fa-edit"></i>
+                         <label>Edit profile</label>
+                    </div>
+               </div>
+               <div class="flex space-x-3 ml-4">
+                    <label class="bg-[#3BAEFA] w-[120px] h-[37px] flex items-center justify-center space-x-3 rounded-md text-xl">
+                         421 Posts
+                    </label>
+                    <label class="bg-[#3BAEFA] w-[120px] h-[37px] flex items-center justify-center space-x-3 rounded-md text-xl">
+                         4.2k Friends
+                    </label>
+               </div>
+               <div class="ml-4 space-y-3 mt-2">
+                    Information
+                    <div class="    mt-2 space-x-3  text-xl">
+                         <i class="fa-solid fa-graduation-cap"></i>
+                         <label class="text-[16px]">Study at: Institute of Technology of Cambodia</label>
+                    </div>
+                    <div class="    space-x-5  text-xl">
+                         <i class="fa-solid fa-location-dot"></i>
+                         <label class="text-[16px] ">From: Phnom Penh</label>
+                    </div>
+                    <div class="    space-x-3  text-xl">
+                         <i class="fa-solid fa-user-plus"></i>
+                         <label class="text-[16px]">Follower 1.2M</label>
+                    </div>
+                          
+               </div>
+          </div>
+           
+               <div class="bg-[#91C6DD] w-full h-[133px] flex-shrink-0 "  >
+                    <a class="text-xs ml-3">Media</a>
+                    <div class="container">
+                         <div class="image-container">
+                           <div class="image"><img src="./image/2.jpg" alt=""></div>
+                           <div class="image"><img src="./image/3.jpg" alt=""></div>
+                           <div class="image"><img src="./image/1.jpg" alt=""></div>
+                           <div class="image"><img src="./image/user.jpg" alt=""></div>
+                           <div class="image"><img src="./image/4.jpg" alt=""></div>
+                         </div>
+                         <div class="full-image">
+                           <span>&times;</span>
+                           <img src="./image/2.jpg" alt="">
+                         </div>
+                       </div>
+                    <button class="text-xs bg-[#A6E1FA] w-full flex justify-center mt-2  border-[1px] border-black ">See More</button>
+  
+               </div>
+               <div class=" bg-[#97DBF8] h-[425px] mt-3 flex-shrink-0 rounded-sm ">
+                    <div class="flex justify-between  items-center">
+                         <div class="flex items-center ml-3 mt-3">
+                              <img src="./image/user.jpg" style="width:46px ; height: 46px; border-radius: 50%; ">
+                              <p class="text-[14px] ml-2">San Vannak</p>
+                         </div>
+                         <i class="fa-solid fa-ellipsis-vertical mr-3"></i>
+                    </div>
+                    <div class="flex flex-col ml-16">
+                         <label>Keep Going!</label>
+                         <img src="./image/user.jpg" alt="" class="rounded-lg w-[289px] h-[305px]   mt-1 ">
+                    </div>
+                    <div class="flex   w-[289px] h-[40px]  justify-between items-center ml-16">
+                         <div class="flex items-center   ">
+                              <button onclick="Toggle()" id="btn" class="cursor-pointer"><i class="fa-solid fa-heart"></i></button>
+                              <a class="ml-2 text-[10px] font-normal">1.2M</a>
+                         </div>
+                         <div class="flex">
+                              <i class="fa-solid fa-comment"  ></i>
+                              <a class="ml-2 text-[10px] font-normal">231k</a>
+                         </div>
+                         <div class="flex">
+                              <i class="fa-solid fa-share"></i>
+                              <a class="ml-2 text-[10px] font-normal">1.2M</a>
+                         </div>
+                    </div>
+               </div>
+               <div class=" bg-[#97DBF8] h-[425px] mt-1 flex-shrink-0 rounded-sm">
+                    <div class="flex justify-between  items-center">
+                         <div class="flex items-center ml-3 mt-3">
+                              <img src="./image/user.jpg" style="width:46px ; height: 46px; border-radius: 50%; ">
+                              <p class="text-[14px] ml-2">San Vannak</p>
+                         </div>
+                         <i class="fa-solid fa-ellipsis-vertical mr-3"></i>
+                    </div>
+                    <div class="flex flex-col ml-16">
+                         <label>🗻🗻</label>
+                         <img src="./image/2.jpg" alt="" class="rounded-lg w-[289px] h-[305px]   mt-1 ">
+                    </div>
+                    <div class="flex   w-[289px] h-[40px]  justify-between items-center ml-16">
+                         <div class="flex items-center   ">
+                              <button onclick="Toggle2()" id="btn2" class="cursor-pointer"><i class="fa-solid fa-heart"></i></button>
+                              <a class="ml-2 text-[10px] font-normal">1.2M</a>
+                         </div>
+                         <div class="flex">
+                              <i class="fa-solid fa-comment"  ></i>
+                              <a class="ml-2 text-[10px] font-normal">231k</a>
+                         </div>
+                         <div class="flex">
+                              <i class="fa-solid fa-share"></i>
+                              <a class="ml-2 text-[10px] font-normal">1.2M</a>
+                         </div>
+                    </div>
+               </div>
+        
+     </div>
+      
+  </div>
+  <div class="h10 w-28 bg-black rounded-full relative left-[150px] top-[-840px]">f</div>
+
+  <script>
+ 
+     document.querySelectorAll('.image-container img').forEach(image =>{
+          image.onclick =() =>{
+               document.querySelector('.full-image').style.display = 'block';
+               document.querySelector('.full-image img').src = image.getAttribute('src');
+          }
+     })
+     document.querySelector('.full-image span').onclick = () =>{
+          document.querySelector('.full-image').style.display = 'none';
+     }
+
+     var btn = document.getElementById('btn');
+     var btn2 = document.getElementById('btn2');
+
+     function Toggle(){
+     if (btn.style.color =='red'){
+     btn.style.color = 'black'
+     }else{
+     btn.style.color = 'red'
+     }
+     }
+
+     function Toggle2(){
+     if (btn2.style.color =='red'){
+     btn2.style.color = 'black'
+     }else{
+     btn2.style.color = 'red'
+     }
+     }
+
+</script>
+</script>
+</body>
+</html>

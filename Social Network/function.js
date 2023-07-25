@@ -9,8 +9,6 @@ function changtoRed(){
 }
 
 
-let setting = document.getElementById("setting");
-function setting(){
-    setting.classList.add("settingpage")
-}
+ 
+
  
