@@ -3,87 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Social Network</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
 </head>
-<body>
+<body class="flex justify-center mt-10">
     
-     <i class="bi bi-brightness-high-fill" id="TurnToDarkMode"></i>
  
-     <script>
-     //     const toggle = document.getElementById('TurnToDarkMode');
-     //     const body = document.querySelector('body');
-     //     const Div1 = document.getElementById('Div1');
  
-     //     toggle.addEventListener('click', function(){
-     //         this.classList.toggle('bi-moon');
-     //         if(this.classList.toggle('bi-brightness-high-fill')){
-     //             body.style.background='#A6E1FA';
-     //             body.style.color = 'black';
-     //             Div1.color='#0E6BA8'
-     //             body.style.transition ='2s';
-     //         }
-     //         else{
-     //             body.style.background='#252526';
-     //             body.style.color = 'white';
-     //             Div1.color='#343E51'
-     //             body.style.transition ='2s';
-     //         }
-     //     })
-
-     //     function Changecolor(){
-     //      document.getElementById('Div1').style.background='#343E51'
-     //     }
-            // Get all of the div elements
-               const divs = document.querySelectorAll("div");
-
-               // Create a function to change the color of the divs
-               function changeColor(div) {
-               div.style.backgroundColor = "red";
-               }
-
-               // Add an event listener to the document
-               document.addEventListener("click", function () {
-               // Loop through all of the div elements
-               for (const div of divs) {
-               // Change the color of the div
-               changeColor(div);
-               }
-               });
-
-               
-     </script>
-
-<div class ="h-10 w-52 bg-slate-500 mt-3"id="my-div">This is my first div</div>
-<div class ="h-10 w-52 bg-slate-500 mt-3" id="my-div">This is my second div</div>
-<div class ="h-10 w-52 bg-slate-500 mt-3" id="my-div">This is my third div</div>
-    <div class="w-[393px] h-[852px]   mt-14 flex flex-col justify-between  " id="notificationpage">
-        <div class="h-[80px] border-b-2 border-black flex  items-center">
-            <a href="Menubar.html">
-                <i class="fa-solid fa-arrow-left ml-3"></i>
-            </a>
-             <i class="fa-solid fa-gear text-[40px] ml-3"></i>
-             <p class="text-[20px] ml-3  ">Social Network</p>
-              
-        </div>
-        <div class="  h-full flex flex-col items-center space-y-4  "  >
-             <div class="bg-[#0E6BA8] w-[348px] h-[47px] rounded-lg flex items-center   mt-5" id="Div1">
-                  <a class="text-red-500 ml-4">Log Out</a>
-                   
-             </div>
-             <div class="bg-[#0E6BA8] w-[348px] h-[47px] rounded-lg flex justify-between items-center pl-4 cursor-pointer" id="Div1" onclick="Changecolor()">Turn to dark mode</div>
-             
-             <a href="Change-Passwor.html">
-                <div class="bg-[#0E6BA8] w-[348px] h-[47px] rounded-lg flex items-center pl-4" id="Div1" >Change Password</div>
-             </a>
+<div class="w-[393px] h-[852px] bg-[#A6E1FA] border-4 border-black rounded-[30px] mt-14 flex flex-col justify-between   "  >
+    <div class="h-6 w-28 bg-black rounded-full relative left-36 mt-1"></div>
+    <div class="w-[393px] h-[852px]  flex flex-col justify-between  "  >
+     <div class="h-[80px] w-[388px] border-b-2 border-black flex  items-center mt-[-20px]">
+         <a href="Menubar.html">
+             <i class="fa-solid fa-arrow-left ml-3"></i>
+         </a>
+          <i class="fa-solid fa-gear text-[40px] ml-3"></i>
+          <p class="text-[20px] ml-3  ">Setting</p>
+           
+     </div>
+     <div class="  h-full flex flex-col items-center space-y-4 mt-5 "  >
+        <a href="index.html">
+            <div class="bg-[#0E6BA8] w-[348px] h-[47px] rounded-lg flex items-center pl-4 text-red-600"   >Log Out</div>
+         </a>
+          <div class="bg-[#0E6BA8] w-[348px] h-[47px] rounded-lg flex justify-between items-center pl-4 cursor-pointer"   onclick="Changecolor()">Turn to dark mode</div>
+          
+          <a href="Change-Passwor.html">
+             <div class="bg-[#0E6BA8] w-[348px] h-[47px] rounded-lg flex items-center pl-4"   >Change Password</div>
+          </a>
 
 
-             
-        </div>
-        
-   </div>
+          
+     </div>
+     
+</div>
+</div>
+ 
+     
 </body>
 </html>

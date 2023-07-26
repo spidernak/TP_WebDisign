@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Social Network</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
-<body class="p-56">
+<body class="flex justify-center mt-10">
  
 
 
 
      <div class="w-[393px] h-[852px] bg-[#A6E1FA] border-4 border-black rounded-[30px] mt-14 flex flex-col justify-between   "  >
-          <div class="h10 w-28 bg-black rounded-full relative left-32 mt-1">.</div>
+          <div class="h-6 w-28 bg-black rounded-full relative left-36 mt-1"></div>
          <div class="h-[80px] border-b-2 border-black flex justify-between items-center relative top-[-20px]">
-              <p class="text-[20px] ml-4  ">Social Network</p>
+              <p class="text-[20px] ml-4  "style="font-family: initial;">Social Network</p>
               <a href="ChatList.html">
                  <i class="fa-brands fa-facebook-messenger  fa-xl mr-5"></i>
               </a>
@@ -71,14 +71,14 @@
                     <div class=" bg-[#97DBF8] h-[425px] mt-1 flex-shrink-0 rounded-sm">
                          <div class="flex justify-between  items-center">
                               <div class="flex items-center ml-3 mt-3">
-                                   <img src="./image/user.jpg" style="width:46px ; height: 46px; border-radius: 50%; ">
-                                   <p class="text-[14px] ml-2">San Vannak</p>
+                                   <img src="./image/john_cinapf.jpg" style="width:46px ; height: 46px; border-radius: 50%; ">
+                                   <p class="text-[14px] ml-2">John Cina</p>
                               </div>
                                <button type="submit"  class="btn1"  onclick="openPopup()"><i class="fa-solid fa-ellipsis-vertical"></i></button>
                          </div>
                          <div class="flex flex-col ml-16">
-                              <label>Keep Going!</label>
-                              <img src="./image/user.jpg" alt="" class="rounded-lg w-[289px] h-[305px]   mt-1 ">
+                              <label>Kinda stuck with this song</label>
+                              <img src="./image/john_cinapost.jpg" alt="" class="rounded-lg w-[289px] h-[305px]   mt-1 ">
                          <div class="flex   w-[289px] h-[40px]  justify-between items-center">
                               <div class="flex items-center">
                                    <button onclick="Toggle()" id="btn" class="cursor-pointer"><i class="fa-solid fa-heart"></i></button>
@@ -98,14 +98,14 @@
                <div class=" bg-[#97DBF8] h-[425px] mt-1 flex-shrink-0 rounded-sm">
                   <div class="flex justify-between  items-center">
                        <div class="flex items-center ml-3 mt-3">
-                            <img src="./image/user.jpg" style="width:46px ; height: 46px; border-radius: 50%; ">
-                            <p class="text-[14px] ml-2">San Vannak</p>
+                            <img src="./image/pl.jpg" style="width:46px ; height: 46px; border-radius: 50%; ">
+                            <p class="text-[14px] ml-2">Poly Ratanak</p>
                        </div>
                         <button type="submit"  class="btn1"  onclick="openPopup()"><i class="fa-solid fa-ellipsis-vertical"></i></button>
                   </div>
                   <div class="flex flex-col ml-16">
-                       <label>Keep Going!</label>
-                       <img src="./image/user.jpg" alt="" class="rounded-lg w-[289px] h-[305px]   mt-1 ">
+                       <label>Hello</label>
+                       <img src="./image/plp.jpg" alt="" class="rounded-lg w-[289px] h-[305px]   mt-1 ">
                         <div class="flex   w-[289px] h-[40px]  justify-between items-center">
                             <div class="flex items-center">
                               <button onclick="Toggle2()" id="btn2" class="cursor-pointer"><i class="fa-solid fa-heart"></i></button>
@@ -124,14 +124,14 @@
                   <div class=" bg-[#97DBF8] h-[425px] mt-1 flex-shrink-0 rounded-sm">
                          <div class="flex justify-between  items-center">
                               <div class="flex items-center ml-3 mt-3">
-                                   <img src="./image/user.jpg" style="width:46px ; height: 46px; border-radius: 50%; ">
-                                   <p class="text-[14px] ml-2">San Vannak</p>
+                                   <img src="./image/ttt.jpg" style="width:46px ; height: 46px; border-radius: 50%; ">
+                                   <p class="text-[14px] ml-2">Dwayne Johnson</p>
                               </div>
                                <button type="submit"  class="btn1"  onclick="openPopup()"><i class="fa-solid fa-ellipsis-vertical"></i></button>
                          </div>
                          <div class="flex flex-col ml-16">
-                              <label>Keep Going!</label>
-                              <img src="./image/user.jpg" alt="" class="rounded-lg w-[289px] h-[305px]   mt-1 ">
+                              <label>HUH!</label>
+                              <img src="./image/Therock.jpg" alt="" class="rounded-lg w-[289px] h-[305px]   mt-1 ">
                          </div>
                          <div class="flex   w-[289px] h-[40px]  ml-16 justify-between items-center">
                               <div class="flex items-center   ">
@@ -178,25 +178,28 @@
            </a>
        </button>
    </nav>
+   <div class="popup" id="popup">
+     <div class="  w-[393px] h-[851px] flex place-content-center items-center rounded-[30px]">
+               <div class="bg-[#93bbcc] w-52 h-52 flex flex-col justify-center items-center rounded-lg space-y-4">
+                    <button class="flex justify-center items-center space-x-2 hover:scale-105">
+                         <i class="fa-solid fa-eye-slash"></i>
+                         <h6>Hide this post</h6>
+                    </button>
+                    <button class="flex justify-center items-center space-x-2 hover:scale-105">
+                         <i class="fa-solid fa-save"></i>
+                         <h6>Save this post</h6>
+                    </button>
+                    <button class="flex justify-center items-center space-x-2 hover:scale-105">
+                         <i class="fa-solid fa-trash"></i>
+                         <h6 class="text-red-600">Delete this post</h6>
+                    </button>
+                    <button type="button" onclick="closePopup()">Back</button>
+               </div>
+          </div>
+     </div>
 </div>
 
-<div class="popup" id="popup">
-     <div class="bg-[#0E6BA8] w-52 h-52 flex flex-col justify-center items-center rounded-lg space-y-4">
-       <div class="flex justify-center items-center space-x-2">
-         <i class="fa-solid fa-edit"></i>
-         <h6>Edit this post</h6>
-       </div>
-       <div class="flex justify-center items-center space-x-2">
-         <i class="fa-solid fa-save"></i>
-         <h6>Edit this post</h6>
-       </div>
-       <div class="flex justify-center items-center space-x-2 ">
-         <i class="fa-solid fa-trash"></i>
-         <h6 class="text-red-600">Edit this post</h6>
-       </div>
-       <button type="button" onclick="closePopup()">Back</button>
-     </div>
-   </div>
+ 
  
 
     
@@ -222,7 +225,7 @@ display: none;
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0.1);
   visibility: hidden;
@@ -230,8 +233,8 @@ display: none;
 }
 .open-popup{
   visibility: visible;
-  left: 500px;
-  top: 120px;
+  left: 50%;
+  top: 41%;
   transform: translate(-50%, -50%) scale(1);
 }
 
@@ -265,14 +268,15 @@ display: none;
      }
      }
 
+
      let popup = document.getElementById("popup");
 
-function openPopup(){
-  popup.classList.add("open-popup");
-}
-function closePopup(){
-  popup.classList.remove("open-popup");
-}
+          function openPopup(){
+          popup.classList.add("open-popup");
+          }
+          function closePopup(){
+          popup.classList.remove("open-popup");
+          }
 
 </script>
 
